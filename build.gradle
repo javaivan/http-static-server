@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.11'
+}
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.ivanmix.server.Server'
+    }
+}
